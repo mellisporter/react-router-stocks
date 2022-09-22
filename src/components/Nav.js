@@ -4,9 +4,15 @@ import {Link} from "react-router-dom";
 const Nav = function() {
     return(
         <div className="nav"> 
+        <Link to="/">
         StockR
-        <a>About</a>
-        <a>Stocks</a>
+        </Link>
+        <Link to="/about">
+        About
+        </Link>
+        <Link to="/stocks">
+        Stocks
+        </Link>
         </div>
     )
 }

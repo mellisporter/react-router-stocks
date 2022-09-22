@@ -2,7 +2,7 @@ import React from "react";
 
 const Main = function() {
    return(
-    <h1>Sup</h1>
+    <h1>This is the home page</h1>
    )
 }
 

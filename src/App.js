@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router';
 import Nav from "./components/Nav";
 import Main from "./pages/Main";
 import About from "./pages/About";
+import Stocks from "./pages/Stocks";
 
 function App() {
   return (
@@ -13,6 +14,12 @@ function App() {
     <Switch>
       <Route exact path="/">
         <Main/>
+      </Route>
+      <Route path="/about">
+        <About/>
+      </Route>
+      <Route path="/stocks">
+        <Stocks/>
       </Route>
     </Switch>
     </div>
