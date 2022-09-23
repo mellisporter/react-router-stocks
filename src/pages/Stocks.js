@@ -15,10 +15,10 @@ const Stocks = function() {
     return(
         <div className="stocks">
             {stocks.map((stock)=> {
-                const {name, value} = stock;
+                const {name, symbol} = stock;
            
             return(
-                <Link to={`/stocks/${value}`}>
+                <Link to={`/stocks/${symbol}`}>
                     <h2>{name}</h2>
                 </Link>
             );

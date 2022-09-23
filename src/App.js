@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 
-import { Route, Switch } from 'react-router';
+import { Route, Switch } from 'react-router-dom';
 import Nav from "./components/Nav";
 import Main from "./pages/Main";
 import About from "./pages/About";
 import Stocks from "./pages/Stocks";
+import StockValue from "./pages/StockValue";
+
 
 function App() {
   return (
@@ -18,9 +20,11 @@ function App() {
       <Route path="/about">
         <About/>
       </Route>
+      <Route path="/stocks/:symbol" render={(routerProps)=> <StockValue {...routerProps}/>}/>
       <Route path="/stocks">
         <Stocks/>
       </Route>
+      
     </Switch>
     </div>
   );
