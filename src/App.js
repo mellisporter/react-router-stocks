@@ -8,6 +8,9 @@ import About from "./pages/About";
 import Stocks from "./pages/Stocks";
 import StockValue from "./pages/StockValue";
 
+// data from array
+import data from "./components/StockData";
+
 
 function App() {
   return (
